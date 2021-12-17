@@ -24,27 +24,33 @@ for qe in range(0,testlength):
 		if int(questionattempt) == answer:
 			print ("Well done! You got the answer correct.")
 			score = score+1
+			input("Press enter when you are ready to move onto the next question...")
 			system('clear')
 		else:
 			print (f"Oh dear! Better luck next time. The answer was {answer}")
+			input("Press enter when you are ready to move onto the next question...")
 			system('clear')
 	elif testoperator == "-":
 		answer = (equationint1-equationint2)
 		if int(questionattempt) == answer:
 			print ("Well done! You got the answer correct.")
 			score = score+1
+			input("Press enter when you are ready to move onto the next question...")
 			system('clear')
 		else:
 			print (f"Oh dear! Better luck next time. The answer was {answer}")
+			input("Press enter when you are ready to move onto the next question...")
 			system('clear')
 	else:
 		answer = (equationint1*equationint2)
 		if int(questionattempt) == answer:
 			print ("Well done! You got the answer correct.")
 			score = score+1
+			input("Press enter when you are ready to move onto the next question...")
 			system('clear')
 		else:
 			print (f"Oh dear! Better luck next time. The answer was {answer}")
+			input("Press enter when you are ready to move onto the next question...")
 			system('clear')
 
 rawpercentage = score/testlength*100	
