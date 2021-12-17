@@ -2,10 +2,11 @@ import time
 import random
 from decimal import Decimal, ROUND_DOWN
 from os import system
+system('clear')
 print ("Hello and welcome to Maths Tester Pro!")
 testcode = input("Please enter your test code: ")
 studentname = input("Please enter your name: ")
-print(f"Hello {name}!")
+print(f"Hello {studentname}!")
 testparameters = testcode.split("|")
 testlength = int(testparameters[0])
 testoperator = testparameters[1]

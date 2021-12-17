@@ -1,5 +1,6 @@
 import time
 from os import system
+system('clear')
 print ("Hello and welcome to Maths Tester Pro Admin Console ")
 accesscode = "5J125U7O8N3"
 acesscodeattempt = input("Please enter your access code: ")
