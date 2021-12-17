@@ -1,0 +1,25 @@
+import time
+from os import system
+print ("Hello and welcome to Maths Tester Pro Admin Console ")
+accesscode = "5J125U7O8N3"
+acesscodeattempt = input("Please enter your access code: ")
+while acesscodeattempt != accesscode:
+	print("Incorrect code. Please try again")
+	acesscodeattempt = input("Please enter your access code: ")
+system('clear')
+teachername = input("What is your name: ")
+print (f"Welcome to Maths Tester Pro, {teachername}!")
+time.sleep(1)
+input ("To generate a unique code for your student, press enter to continue to the test creator...")
+system('clear')
+print ("Test Creator Loading...")
+time.sleep(10)
+system('clear')
+numquestions = int(input("How many questions would you like to set: "))
+operation = input("What operator would you like to use in your test (please choose only one), choose from multiply, add, and subtract, the divide feature is currently in progress: ")
+print ("Please type in the range of numbers for the questions below:")
+range1 = input("First Number: ")
+range2 = input("Second Number: ")
+testcode = (f"{numquestions}|{operation}|{range1}|{range2}")
+print (f"This is your test code: {testcode}")
+print ("Give this to the student you would like to do the test.")
